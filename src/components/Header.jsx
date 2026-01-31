@@ -1,4 +1,13 @@
+import { useState } from 'react'
+
 function Header({ activeSection, setActiveSection }) {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+
+  const handleNavClick = (section) => {
+    setActiveSection(section)
+    setMobileMenuOpen(false)
+  }
+
   return (
     <header className="header">
       <div className="header-top">
@@ -13,40 +22,45 @@ function Header({ activeSection, setActiveSection }) {
           <span style={{color: '#4A90E2'}}>Ulezi</span>
           <span style={{color: '#27AE60'}}> Hub</span>
         </div>
-        <nav className="nav">
+        
+        <button className="mobile-menu-btn" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
+          {mobileMenuOpen ? '✕' : '☰'}
+        </button>
+
+        <nav className={`nav ${mobileMenuOpen ? 'mobile-open' : ''}`}>
           <button 
             className={activeSection === 'home' ? 'active' : ''} 
-            onClick={() => setActiveSection('home')}
+            onClick={() => handleNavClick('home')}
           >
             Home
           </button>
           <button 
             className={activeSection === 'services' ? 'active' : ''} 
-            onClick={() => setActiveSection('services')}
+            onClick={() => handleNavClick('services')}
           >
             Services
           </button>
           <button 
             className={activeSection === 'appointment' ? 'active' : ''} 
-            onClick={() => setActiveSection('appointment')}
+            onClick={() => handleNavClick('appointment')}
           >
             Book Appointment
           </button>
           <button 
             className={activeSection === 'consultation' ? 'active' : ''} 
-            onClick={() => setActiveSection('consultation')}
+            onClick={() => handleNavClick('consultation')}
           >
             Book Consultation
           </button>
           <button 
             className={activeSection === 'insurance' ? 'active' : ''} 
-            onClick={() => setActiveSection('insurance')}
+            onClick={() => handleNavClick('insurance')}
           >
             Insurance
           </button>
           <button 
             className={activeSection === 'emergency' ? 'active' : ''} 
-            onClick={() => setActiveSection('emergency')}
+            onClick={() => handleNavClick('emergency')}
           >
             Emergency
           </button>

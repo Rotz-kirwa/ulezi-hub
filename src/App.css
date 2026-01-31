@@ -80,6 +80,16 @@ body {
   gap: 30px;
 }
 
+.mobile-menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: var(--text-dark);
+  padding: 5px;
+}
+
 .nav button {
   background: none;
   border: none;
@@ -1022,8 +1032,46 @@ body {
 
 /* Responsive */
 @media (max-width: 768px) {
+  .header-top-content {
+    font-size: 12px;
+    gap: 10px;
+  }
+
+  .mobile-menu-btn {
+    display: block;
+  }
+
   .nav {
     display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--white);
+    flex-direction: column;
+    gap: 0;
+    box-shadow: 0 4px 12px var(--shadow);
+    z-index: 1000;
+  }
+
+  .nav.mobile-open {
+    display: flex;
+  }
+
+  .nav button {
+    padding: 15px 20px;
+    text-align: left;
+    border-bottom: 1px solid var(--light-gray);
+    font-size: 16px;
+  }
+
+  .nav button:last-child {
+    border-bottom: none;
+  }
+
+  .hero {
+    padding: 150px 20px;
+    min-height: 400px;
   }
 
   .hero h1 {
@@ -1047,9 +1095,12 @@ body {
   }
 
   .services-grid,
-  .doctors-grid,
   .features-grid,
   .testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .services-detailed {
     grid-template-columns: 1fr;
   }
 }
