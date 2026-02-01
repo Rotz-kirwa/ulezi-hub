@@ -2495,12 +2495,17 @@ body {
 
 /* Services Mobile */
 @media (max-width: 768px) {
+  .section {
+    padding: 30px 20px;
+  }
+
   .section-title {
     font-size: 20px;
+    margin-bottom: 8px;
   }
 
   .section-subtitle {
     font-size: 14px;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
   }
 }
