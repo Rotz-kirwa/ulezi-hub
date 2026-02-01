@@ -61,9 +61,9 @@ function Contact() {
               <div className="contact-icon">📧</div>
               <h3>Email Us</h3>
               <p className="contact-detail">General Inquiries</p>
-              <a href="mailto:info@jifunzeulezi.co.ke" className="contact-link">info@jifunzeulezi.co.ke</a>
+              <a href="mailto:jifunzeulezihub@gmail.com" className="contact-link">jifunzeulezihub@gmail.com</a>
               <p className="contact-detail" style={{marginTop: '15px'}}>Appointments</p>
-              <a href="mailto:appointments@jifunzeulezi.co.ke" className="contact-link">appointments@jifunzeulezi.co.ke</a>
+              <a href="mailto:jifunzeulezihub@gmail.com" className="contact-link">jifunzeulezihub@gmail.com</a>
             </div>
 
             <div className="contact-card">
@@ -72,15 +72,6 @@ function Contact() {
               <p className="contact-detail">Quick Response</p>
               <a href="https://wa.me/254711355485" target="_blank" rel="noopener noreferrer" className="contact-link">Chat with us</a>
               <p className="contact-detail" style={{marginTop: '15px'}}>Available 24/7</p>
-            </div>
-
-            <div className="contact-card">
-              <div className="contact-icon">📍</div>
-              <h3>Visit Us</h3>
-              <p className="contact-detail">123 Care Street</p>
-              <p className="contact-detail">Medical District</p>
-              <p className="contact-detail">Nairobi, Kenya</p>
-              <a href="#" className="contact-link" style={{marginTop: '10px'}}>Get Directions</a>
             </div>
           </div>
 
