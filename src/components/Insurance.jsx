@@ -33,25 +33,25 @@ function Insurance() {
             <div className="service-image-full">
               {provider.name === 'SHA' ? (
               <img 
-                src="https://i.pinimg.com/1200x/74/0a/56/740a562d61dd5ae4230bb1c46a1b0a82.jpg" 
+                src="https://www.dropbox.com/scl/fi/nlsefiim7ppu1cawtv190/sha.png?rlkey=pcpwdktqhxg1mla7p6w7nxp8n&st=y2kh4n4b&raw=1" 
                 alt="SHA Logo" 
                 loading="lazy"
               />
             ) : provider.name === 'Jubilee Insurance' ? (
               <img 
-                src="https://i.pinimg.com/736x/b8/66/e5/b866e5f6663f15bb7da379ad0999582d.jpg" 
+                src="https://www.dropbox.com/scl/fi/zbenibof2veozpua6qug5/jubille.png?rlkey=7by3kb6xupofekhhqb7geepq3&st=1vey6gul&raw=1" 
                 alt="Jubilee Insurance Logo" 
                 loading="lazy"
               />
             ) : provider.name === 'Madison Insurance' ? (
               <img 
-                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAArlBMVEUELW0DKmwELG0AJ2oAEmMvSHwAF2gABWBEWojGzNn////Y3uVBVocADmEmRHq6wtA8UoUAGmhndJywucrQ1d1aa5Q0rZin49GSnbWeqb/K7+NEo5oBImoMRnQovJcAs486u53M6+Tf8u5Tw6gmtJUAJW0nuJYnt5Z0tK7y8vaP08MahoUkrpJOY4wAHmoBKG0UZnwOT3Yhn44YdoAdjIgIOnESX3oRVXgJPXAUZn34x4WfAAABFUlEQVR4AY3ShaKCMACF4bNhd+ccNxbmZsf7P5hK2vEr+dGAryKIo3fkJJIpJ5xNkYRztaWTzmRz+UKRACRRyubKlXTEpFrL57zKqKZQ92cbzZRvFK12LqzTjeZ6feYhGXD35zd309+/KyT1UWntDkdXNnaVukI1SdUjymKq9S2y4szfeVRLy6m6R8jq+XLqhlH7BIHELJOgeIFwHOAlAp9R6DusIs5OuLrB6dyQWM2ixSPk+qx8OTDnRcIoAGtWwoYPnmuf15SZwWTjMWUbCi+Smmvls16tOecraa8/B4k1V576Yz7dElxFzc479jkfdwQ3WbbiwbH5ilncZ/ZLrs4X7V/QQ6R6EGJbJXieBCxeRim+7gSjky1pQBOFnwAAAABJRU5ErkJggg==" 
+                src="https://www.dropbox.com/scl/fi/31wexd9y6j1tlo4dijbn7/madison.png?rlkey=k9r85h15jvdnk7ay4az9my7ex&st=rzoxaiwh&raw=1" 
                 alt="Madison Insurance Logo" 
                 loading="lazy"
               />
             ) : provider.name === 'Britam' ? (
               <img 
-                src="https://i.pinimg.com/736x/d6/8b/96/d68b96eb72826f472091b9c594b2ef56.jpg" 
+                src="https://www.dropbox.com/scl/fi/cucd2kzh3dd8vlxjjpjr0/britam.png?rlkey=m1a0hn6uziqfqatz8d4fc5xtr&st=ja0eydrn&raw=1" 
                 alt="Britam Logo" 
                 loading="lazy"
               />

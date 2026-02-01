@@ -1795,17 +1795,18 @@ body {
 .contact-hero {
   background: linear-gradient(135deg, #4A90E2, #9370DB);
   color: white;
-  padding: 100px 20px;
+  padding: 40px 20px;
   text-align: center;
+  min-height: auto;
 }
 
 .contact-hero h1 {
-  font-size: 48px;
-  margin-bottom: 15px;
+  font-size: 32px;
+  margin-bottom: 10px;
 }
 
 .contact-hero p {
-  font-size: 22px;
+  font-size: 16px;
   opacity: 0.95;
 }
 
@@ -2056,11 +2057,43 @@ body {
 }
 
 @media (max-width: 768px) {
-  .contact-hero h1 {
-    font-size: 32px;
+  .contact-hero {
+    padding: 30px 15px;
   }
 
-  .contact-info-grid,
+  .contact-hero h1 {
+    font-size: 24px;
+  }
+
+  .contact-hero p {
+    font-size: 14px;
+  }
+
+  .contact-info-grid {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .contact-card {
+    border-radius: 0;
+    box-shadow: none;
+    border-bottom: 1px solid #E8E8E8;
+    padding: 30px 20px;
+  }
+
+  .contact-card:first-child {
+    border-radius: 16px 16px 0 0;
+  }
+
+  .contact-card:last-child {
+    border-radius: 0 0 16px 16px;
+    border-bottom: none;
+  }
+
+  .contact-card:hover {
+    transform: none;
+  }
+
   .hours-grid {
     grid-template-columns: 1fr;
   }

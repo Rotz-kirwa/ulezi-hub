@@ -1,9 +1,9 @@
 function Contact() {
   return (
     <>
-      <div className="contact-hero">
-        <h1>Get In Touch</h1>
-        <p>We're here to help you and your family 24/7</p>
+      <div className="contact-hero" style={{padding: '40px 20px', minHeight: 'auto'}}>
+        <h1 style={{fontSize: '32px', marginBottom: '10px'}}>Get In Touch</h1>
+        <p style={{fontSize: '16px'}}>We're here to help you and your family 24/7</p>
       </div>
 
       <section className="section">
