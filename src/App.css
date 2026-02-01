@@ -2212,6 +2212,30 @@ body {
     gap: 15px !important;
   }
 
+  .booking-hero {
+    padding: 20px 15px 15px;
+  }
+
+  .booking-hero h1 {
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+
+  .booking-hero p {
+    font-size: 13px;
+    margin-bottom: 15px;
+  }
+
+  .emergency-banner {
+    padding: 10px 15px;
+    font-size: 13px;
+  }
+
+  .emergency-call {
+    padding: 8px 20px;
+    font-size: 14px;
+  }
+
   .contact-form-section {
     padding: 30px 20px;
   }
