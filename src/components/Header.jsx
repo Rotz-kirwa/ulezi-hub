@@ -13,7 +13,6 @@ function Header({ activeSection, setActiveSection }) {
       <div className="header-top">
         <div className="header-top-content">
           <span>📞 24/7 Emergency: 0711 355 485</span>
-          <span>📍 123 Care Street, Medical District</span>
         </div>
       </div>
       <div className="header-main">
@@ -63,6 +62,12 @@ function Header({ activeSection, setActiveSection }) {
             onClick={() => handleNavClick('insurance')}
           >
             Insurance
+          </button>
+          <button 
+            className={activeSection === 'blog' ? 'active' : ''} 
+            onClick={() => handleNavClick('blog')}
+          >
+            Blog
           </button>
           <button 
             className={activeSection === 'contact' ? 'active' : ''} 

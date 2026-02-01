@@ -11,6 +11,7 @@ import Consultation from './components/Consultation'
 import Contact from './components/Contact'
 import Testimonials from './components/Testimonials'
 import Insurance from './components/Insurance'
+import Blog from './components/Blog'
 import Footer from './components/Footer'
 
 function App() {
@@ -40,6 +41,7 @@ function App() {
         {activeSection === 'consultation' && <Consultation />}
         {activeSection === 'contact' && <Contact />}
         {activeSection === 'insurance' && <Insurance />}
+        {activeSection === 'blog' && <Blog />}
       </main>
       <Footer setActiveSection={handleSetActiveSection} />
       <a href="https://wa.me/254711355485?text=Hello%20Jifunze%20Ulezi%20Hub,%20I%20would%20like%20to%20inquire%20about%20your%20services" target="_blank" rel="noopener noreferrer" className="whatsapp-float" title="Chat with us on WhatsApp">
@@ -48,7 +50,7 @@ function App() {
         </svg>
       </a>
       <div className="mobile-actions">
-        <a href="tel:+254711355485" className="mobile-btn emergency-btn">📞 Emergency</a>
+        <button onClick={() => handleSetActiveSection('contact')} className="mobile-btn emergency-btn">📞 Contact Us</button>
         <button onClick={() => handleSetActiveSection('appointment')} className="mobile-btn appointment-btn">
           📅 Book Now
         </button>

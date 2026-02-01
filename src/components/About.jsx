@@ -9,15 +9,27 @@ function About() {
       <div className="section">
         <div className="about-content">
           <div className="about-story">
-            <h2 className="section-title">Our Story</h2>
+            <h2 className="section-title">Our Story & Impact</h2>
             <p style={{fontSize: '18px', lineHeight: '1.8', color: 'var(--text-gray)', marginBottom: '20px'}}>
-              Jifunze Ulezi Hub was founded with a singular mission: to provide exceptional, compassionate healthcare 
-              for women and children. We understand that the health of mothers and children is the foundation of strong 
-              families and communities.
+              Jifunze Ulezi Hub was born from a deep commitment to transform maternal and child healthcare in Kenya. 
+              We recognized that many women and children lacked access to quality, compassionate healthcare that respects 
+              their dignity and addresses their unique needs.
+            </p>
+            <p style={{fontSize: '18px', lineHeight: '1.8', color: 'var(--text-gray)', marginBottom: '20px'}}>
+              Since our establishment, we have delivered over 5,000 babies safely, vaccinated more than 15,000 children, 
+              and served 10,000+ women with comprehensive healthcare services. Every mother who walks through our doors 
+              receives not just medical care, but emotional support, education, and empowerment.
+            </p>
+            <p style={{fontSize: '18px', lineHeight: '1.8', color: 'var(--text-gray)', marginBottom: '20px'}}>
+              Our impact extends beyond hospital walls. We provide community health education, support HIV-positive mothers 
+              through pregnancy and lactation, offer mental health services for maternal depression and anxiety, and ensure 
+              that no woman is turned away due to financial constraints through our SHA accreditation and flexible payment options.
             </p>
             <p style={{fontSize: '18px', lineHeight: '1.8', color: 'var(--text-gray)'}}>
-              Our state-of-the-art facility combines modern medical technology with a warm, welcoming environment 
-              designed specifically for the comfort of mothers, babies, and children.
+              We exist because we believe every mother deserves expert care, every child deserves a healthy start, and every 
+              family deserves support during life's most precious moments. Our 24/7 emergency services, home visit programs, 
+              and personalized care plans ensure that we're not just treating patients—we're nurturing families and building 
+              healthier communities across Kenya.
             </p>
           </div>
 
@@ -33,90 +45,6 @@ function About() {
               <h3>Our Vision</h3>
               <p>To be the leading healthcare provider for women and children in Kenya, recognized for excellence 
               in maternal and pediatric care.</p>
-            </div>
-          </div>
-
-          <div className="values-section">
-            <h2 className="section-title">Our Core Values</h2>
-            <div className="values-grid">
-              <div className="value-item">
-                <div className="value-icon">💗</div>
-                <h4>Compassion</h4>
-                <p>We treat every patient with empathy, kindness, and respect</p>
-              </div>
-              <div className="value-item">
-                <div className="value-icon">⭐</div>
-                <h4>Excellence</h4>
-                <p>We maintain the highest standards in medical care and service</p>
-              </div>
-              <div className="value-item">
-                <div className="value-icon">🤝</div>
-                <h4>Integrity</h4>
-                <p>We uphold honesty and ethical practices in all we do</p>
-              </div>
-              <div className="value-item">
-                <div className="value-icon">🌟</div>
-                <h4>Innovation</h4>
-                <p>We embrace modern technology and best practices</p>
-              </div>
-            </div>
-          </div>
-
-          <div className="stats-section">
-            <h2 className="section-title">Our Impact</h2>
-            <div className="stats-grid">
-              <div className="stat-card">
-                <div className="stat-number">5000+</div>
-                <div className="stat-label">Babies Delivered</div>
-              </div>
-              <div className="stat-card">
-                <div className="stat-number">15000+</div>
-                <div className="stat-label">Children Vaccinated</div>
-              </div>
-              <div className="stat-card">
-                <div className="stat-number">10000+</div>
-                <div className="stat-label">Women Served</div>
-              </div>
-              <div className="stat-card">
-                <div className="stat-number">24/7</div>
-                <div className="stat-label">Emergency Care</div>
-              </div>
-            </div>
-          </div>
-
-          <div className="facilities-section">
-            <h2 className="section-title">Our Facilities</h2>
-            <div className="facilities-grid">
-              <div className="facility-item">
-                <span className="facility-icon">🏥</span>
-                <h4>Modern Maternity Ward</h4>
-                <p>Comfortable private rooms with 24/7 nursing care</p>
-              </div>
-              <div className="facility-item">
-                <span className="facility-icon">👶</span>
-                <h4>Neonatal ICU</h4>
-                <p>Advanced care for premature and critically ill newborns</p>
-              </div>
-              <div className="facility-item">
-                <span className="facility-icon">🔬</span>
-                <h4>Diagnostic Lab</h4>
-                <p>In-house laboratory with rapid test results</p>
-              </div>
-              <div className="facility-item">
-                <span className="facility-icon">📱</span>
-                <h4>Ultrasound Suite</h4>
-                <p>3D/4D imaging and advanced fetal monitoring</p>
-              </div>
-              <div className="facility-item">
-                <span className="facility-icon">💉</span>
-                <h4>Immunization Center</h4>
-                <p>WHO-standard vaccine storage and administration</p>
-              </div>
-              <div className="facility-item">
-                <span className="facility-icon">🚑</span>
-                <h4>Emergency Services</h4>
-                <p>24/7 emergency care and ambulance services</p>
-              </div>
             </div>
           </div>
         </div>
