@@ -11,6 +11,7 @@ function Consultation() {
     time: '',
     paymentMethod: '',
     mpesaPhone: '',
+    mpesaMessage: '',
     notes: ''
   })
   const [submitted, setSubmitted] = useState(false)
@@ -74,7 +75,7 @@ function Consultation() {
             </div>
           </div>
 
-          <button className="btn-primary" onClick={() => { setSubmitted(false); setStep(1); setFormData({name: '', phone: '', email: '', serviceCategory: '', date: '', time: '', paymentMethod: '', mpesaPhone: '', notes: ''}) }}>
+          <button className="btn-primary" onClick={() => { setSubmitted(false); setStep(1); setFormData({name: '', phone: '', email: '', serviceCategory: '', date: '', time: '', paymentMethod: '', mpesaPhone: '', mpesaMessage: '', notes: ''}) }}>
             Book Another Consultation
           </button>
         </div>
@@ -187,8 +188,11 @@ function Consultation() {
 
                 <div className="input-group">
                   <label>Additional Notes (Optional)</label>
+                  <small style={{color: '#5A6C7D', fontSize: '13px', marginBottom: '8px', display: 'block'}}>
+                    Please include any specific symptoms, concerns, or questions you'd like to discuss during the consultation
+                  </small>
                   <textarea 
-                    placeholder="Any specific concerns or questions..."
+                    placeholder="Example: Experiencing morning sickness, questions about prenatal vitamins, etc."
                     value={formData.notes} 
                     onChange={(e) => setFormData({...formData, notes: e.target.value})}
                     rows="3"
@@ -243,30 +247,37 @@ function Consultation() {
 
                 {formData.paymentMethod === 'mpesa' && (
                   <>
-                    <div className="input-group">
-                      <label>M-Pesa Phone Number *</label>
-                      <input 
-                        type="tel" 
-                        placeholder="0711 355 485"
-                        value={formData.mpesaPhone} 
-                        onChange={(e) => setFormData({...formData, mpesaPhone: e.target.value})}
-                        required
-                      />
-                      <small style={{color: '#5A6C7D', fontSize: '13px', marginTop: '5px'}}>
-                        You'll receive an M-Pesa prompt on this number
-                      </small>
-                    </div>
-                    <div style={{background: '#E8F4F8', padding: '20px', borderRadius: '12px', marginTop: '20px'}}>
+                    <div style={{background: '#E8F4F8', padding: '20px', borderRadius: '12px', marginBottom: '20px'}}>
                       <h4 style={{color: '#2C3E50', marginBottom: '15px', fontSize: '16px'}}>📱 M-Pesa Payment Instructions:</h4>
                       <ol style={{color: '#5A6C7D', fontSize: '14px', lineHeight: '1.8', paddingLeft: '20px'}}>
-                        <li>Click "Confirm Booking" below</li>
-                        <li>You'll receive an STK push notification on your phone</li>
-                        <li>Enter your M-Pesa PIN to complete payment</li>
+                        <li>Go to M-Pesa on your phone</li>
+                        <li>Select "Lipa na M-Pesa" then "Send Money"</li>
+                        <li>Enter phone number: <strong>0711 355 485</strong></li>
+                        <li>Enter the consultation amount based on your selected service</li>
+                        <li>Enter your M-Pesa PIN and confirm</li>
                         <li>You'll receive a confirmation SMS from M-Pesa</li>
-                        <li>Your appointment will be confirmed immediately</li>
+                        <li>Copy the entire M-Pesa message and paste it in the field below</li>
                       </ol>
-                      <p style={{marginTop: '15px', fontSize: '13px', color: '#856404', background: '#FFF3CD', padding: '10px', borderRadius: '8px'}}>
-                        <strong>Note:</strong> Payment must be completed within 60 seconds of receiving the prompt
+                    </div>
+
+                    <div className="input-group">
+                      <label>M-Pesa Transaction Message *</label>
+                      <textarea 
+                        placeholder="Paste your M-Pesa confirmation message here (e.g., ABC123XYZ Confirmed. Ksh2,000.00 sent to...)" 
+                        value={formData.mpesaMessage} 
+                        onChange={(e) => setFormData({...formData, mpesaMessage: e.target.value})}
+                        rows="4"
+                        required
+                        style={{fontFamily: 'monospace', fontSize: '13px'}}
+                      />
+                      <small style={{color: '#5A6C7D', fontSize: '13px', marginTop: '5px'}}>
+                        Copy and paste the complete M-Pesa confirmation SMS you received after payment
+                      </small>
+                    </div>
+
+                    <div style={{background: '#FFF3CD', padding: '15px', borderRadius: '8px', marginTop: '15px'}}>
+                      <p style={{fontSize: '14px', color: '#856404', margin: 0}}>
+                        <strong>Note:</strong> Upon arrival at the facility, you will be directed to the specialist for your consultation. Please arrive 10 minutes before your scheduled time.
                       </p>
                     </div>
                   </>
