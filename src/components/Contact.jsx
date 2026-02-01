@@ -8,6 +8,45 @@ function Contact() {
 
       <section className="section">
         <div className="contact-container">
+          <div className="contact-form-section">
+            <h2>Send Us a Message</h2>
+            <p>We'll get back to you within 24 hours</p>
+            <form className="contact-form">
+              <div className="form-row">
+                <div className="input-group">
+                  <label>Your Name *</label>
+                  <input type="text" placeholder="Enter your name" required />
+                </div>
+                <div className="input-group">
+                  <label>Phone Number *</label>
+                  <input type="tel" placeholder="0711 355 485" required />
+                </div>
+              </div>
+              <div className="input-group">
+                <label>Email Address *</label>
+                <input type="email" placeholder="your@email.com" required />
+              </div>
+              <div className="input-group">
+                <label>Subject *</label>
+                <select required>
+                  <option value="">Select a subject</option>
+                  <option value="appointment">Appointment Inquiry</option>
+                  <option value="services">Services Information</option>
+                  <option value="billing">Billing Question</option>
+                  <option value="feedback">Feedback</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div className="input-group">
+                <label>Message *</label>
+                <textarea rows="5" placeholder="How can we help you?" required></textarea>
+              </div>
+              <button type="submit" className="btn-primary">
+                Send Message ✉️
+              </button>
+            </form>
+          </div>
+
           <div className="contact-info-grid">
             <div className="contact-card">
               <div className="contact-icon">📞</div>
@@ -69,45 +108,6 @@ function Contact() {
                 <p className="hours-desc">Walk-ins welcome</p>
               </div>
             </div>
-          </div>
-
-          <div className="contact-form-section">
-            <h2>Send Us a Message</h2>
-            <p>We'll get back to you within 24 hours</p>
-            <form className="contact-form">
-              <div className="form-row">
-                <div className="input-group">
-                  <label>Your Name *</label>
-                  <input type="text" placeholder="Enter your name" required />
-                </div>
-                <div className="input-group">
-                  <label>Phone Number *</label>
-                  <input type="tel" placeholder="0711 355 485" required />
-                </div>
-              </div>
-              <div className="input-group">
-                <label>Email Address *</label>
-                <input type="email" placeholder="your@email.com" required />
-              </div>
-              <div className="input-group">
-                <label>Subject *</label>
-                <select required>
-                  <option value="">Select a subject</option>
-                  <option value="appointment">Appointment Inquiry</option>
-                  <option value="services">Services Information</option>
-                  <option value="billing">Billing Question</option>
-                  <option value="feedback">Feedback</option>
-                  <option value="other">Other</option>
-                </select>
-              </div>
-              <div className="input-group">
-                <label>Message *</label>
-                <textarea rows="5" placeholder="How can we help you?" required></textarea>
-              </div>
-              <button type="submit" className="btn-primary">
-                Send Message ✉️
-              </button>
-            </form>
           </div>
 
           <div className="map-section">

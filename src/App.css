@@ -2120,6 +2120,47 @@ body {
 
   .hours-grid {
     grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .hours-card {
+    border-radius: 0;
+    padding: 20px 15px;
+    text-align: left;
+    background: white;
+    border-bottom: 1px solid #E8E8E8;
+  }
+
+  .hours-card:first-child {
+    border-radius: 16px 16px 0 0;
+  }
+
+  .hours-card:last-child {
+    border-radius: 0 0 16px 16px;
+    border-bottom: none;
+  }
+
+  .hours-icon {
+    font-size: 28px;
+    margin-bottom: 0;
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  .hours-card h4 {
+    font-size: 16px;
+    margin-bottom: 8px;
+    display: inline-block;
+  }
+
+  .hours-time {
+    font-size: 13px;
+    margin: 3px 0;
+  }
+
+  .hours-desc {
+    font-size: 12px;
+    margin-top: 5px;
   }
 
   .contact-form-section {
