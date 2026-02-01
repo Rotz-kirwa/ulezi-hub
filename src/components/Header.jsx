@@ -27,6 +27,7 @@ function Header({ activeSection, setActiveSection }) {
         </button>
 
         <nav className={`nav ${mobileMenuOpen ? 'mobile-open' : ''}`}>
+          <button className="mobile-close-btn" onClick={() => setMobileMenuOpen(false)}>✕</button>
           <button 
             className={activeSection === 'home' ? 'active' : ''} 
             onClick={() => handleNavClick('home')}

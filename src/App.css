@@ -1074,6 +1074,23 @@ body {
     right: 0;
   }
 
+  .mobile-close-btn {
+    display: none;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: var(--text-dark);
+    padding: 5px;
+  }
+
+  .mobile-close-btn {
+    display: block;
+  }
+
   .nav button {
     padding: 15px 20px;
     text-align: left;
