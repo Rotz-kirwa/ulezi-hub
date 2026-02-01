@@ -2058,15 +2058,16 @@ body {
 
 @media (max-width: 768px) {
   .contact-hero {
-    padding: 30px 15px;
+    padding: 25px 15px;
   }
 
   .contact-hero h1 {
-    font-size: 24px;
+    font-size: 20px;
+    margin-bottom: 6px;
   }
 
   .contact-hero p {
-    font-size: 14px;
+    font-size: 13px;
   }
 
   .contact-info-grid {
@@ -2161,6 +2162,51 @@ body {
   .hours-desc {
     font-size: 12px;
     margin-top: 5px;
+  }
+
+  .contact-form-section {
+    padding: 30px 20px;
+    margin-bottom: 30px;
+  }
+
+  .contact-form-section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .contact-form-section > p {
+    font-size: 14px;
+    margin-bottom: 25px;
+  }
+
+  .contact-form .form-row {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .contact-form .input-group {
+    margin-bottom: 15px;
+  }
+
+  .contact-form label {
+    font-size: 13px;
+    margin-bottom: 6px;
+  }
+
+  .contact-form input,
+  .contact-form select,
+  .contact-form textarea {
+    padding: 12px 14px;
+    font-size: 14px;
+  }
+
+  .contact-form textarea {
+    min-height: 80px;
+  }
+
+  .contact-form .btn-primary {
+    padding: 14px;
+    font-size: 15px;
   }
 
   .contact-form-section {
