@@ -2058,38 +2058,34 @@ body {
 
 @media (max-width: 768px) {
   .contact-hero {
-    padding: 25px 15px;
+    padding: 15px 15px;
   }
 
   .contact-hero h1 {
-    font-size: 20px;
-    margin-bottom: 6px;
+    font-size: 18px;
+    margin-bottom: 4px;
   }
 
   .contact-hero p {
-    font-size: 13px;
+    font-size: 12px;
   }
 
   .contact-info-grid {
-    grid-template-columns: 1fr;
-    gap: 0;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
   }
 
   .contact-card {
-    border-radius: 0;
-    box-shadow: none;
-    border-bottom: 1px solid #E8E8E8;
-    padding: 20px 15px;
-    text-align: left;
-  }
-
-  .contact-card:first-child {
-    border-radius: 16px 16px 0 0;
-  }
-
-  .contact-card:last-child {
-    border-radius: 0 0 16px 16px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px var(--shadow);
     border-bottom: none;
+    padding: 20px 15px;
+    text-align: center;
+  }
+
+  .contact-card:first-child,
+  .contact-card:last-child {
+    border-radius: 12px;
   }
 
   .contact-card:hover {
@@ -2097,16 +2093,16 @@ body {
   }
 
   .contact-icon {
-    font-size: 28px;
+    font-size: 32px;
     margin-bottom: 10px;
-    display: inline-block;
-    margin-right: 10px;
+    display: block;
+    margin-right: 0;
   }
 
   .contact-card h3 {
-    font-size: 18px;
+    font-size: 16px;
     margin-bottom: 8px;
-    display: inline-block;
+    display: block;
   }
 
   .contact-detail {
@@ -2120,38 +2116,35 @@ body {
   }
 
   .hours-grid {
-    grid-template-columns: 1fr;
-    gap: 0;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
   }
 
   .hours-card {
-    border-radius: 0;
+    border-radius: 12px;
     padding: 20px 15px;
-    text-align: left;
+    text-align: center;
     background: white;
-    border-bottom: 1px solid #E8E8E8;
-  }
-
-  .hours-card:first-child {
-    border-radius: 16px 16px 0 0;
-  }
-
-  .hours-card:last-child {
-    border-radius: 0 0 16px 16px;
     border-bottom: none;
+    box-shadow: 0 2px 8px var(--shadow);
+  }
+
+  .hours-card:first-child,
+  .hours-card:last-child {
+    border-radius: 12px;
   }
 
   .hours-icon {
-    font-size: 28px;
-    margin-bottom: 0;
-    display: inline-block;
-    margin-right: 10px;
+    font-size: 32px;
+    margin-bottom: 10px;
+    display: block;
+    margin-right: 0;
   }
 
   .hours-card h4 {
-    font-size: 16px;
+    font-size: 15px;
     margin-bottom: 8px;
-    display: inline-block;
+    display: block;
   }
 
   .hours-time {
