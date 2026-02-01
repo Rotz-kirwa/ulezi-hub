@@ -30,7 +30,7 @@ function Appointment() {
     
     const message = `*New Appointment Booking*%0A%0A*Name:* ${formData.name}%0A*Phone:* ${formData.phone}%0A*Email:* ${formData.email}%0A*Service:* ${formData.serviceCategory}%0A*Date:* ${dateFormatted}%0A*Time:* ${formData.time}${formData.notes ? `%0A*Notes:* ${formData.notes}` : ''}`
     
-    window.open(`https://wa.me/254711355485?text=${message}`, '_blank')
+    window.open(`https://wa.me/254737633532?text=${message}`, '_blank')
     setSubmitted(true)
   }
 
@@ -76,7 +76,7 @@ function Appointment() {
 
       <div className="emergency-banner">
         <span>🚨 Need urgent care?</span>
-        <a href="tel:+254711355485" className="emergency-call">Call Now: 0711 355 485</a>
+        <a href="tel:+254737633532" className="emergency-call">Call Now: 0737 633 532</a>
       </div>
 
       <div className="booking-container">

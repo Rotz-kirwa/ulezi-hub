@@ -91,7 +91,7 @@ function Consultation() {
 
       <div className="emergency-banner">
         <span>🚨 Need urgent care?</span>
-        <a href="tel:+254711355485" className="emergency-call">Call Now: 0711 355 485</a>
+        <a href="tel:+254737633532" className="emergency-call">Call Now: 0737 633 532</a>
       </div>
 
       <div className="booking-container">

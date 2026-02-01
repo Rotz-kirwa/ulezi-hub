@@ -52,9 +52,9 @@ function Contact() {
               <div className="contact-icon">📞</div>
               <h3>Call Us</h3>
               <p className="contact-detail">24/7 Emergency Line</p>
-              <a href="tel:+254711355485" className="contact-link">0711 355 485</a>
+              <a href="tel:+254737633532" className="contact-link">0737 633 532</a>
               <p className="contact-detail" style={{marginTop: '15px'}}>Appointments</p>
-              <a href="tel:+254711355485" className="contact-link">0711 355 485</a>
+              <a href="tel:+254737633532" className="contact-link">0737 633 532</a>
             </div>
 
             <div className="contact-card">
@@ -70,7 +70,7 @@ function Contact() {
               <div className="contact-icon">💬</div>
               <h3>WhatsApp</h3>
               <p className="contact-detail">Quick Response</p>
-              <a href="https://wa.me/254711355485" target="_blank" rel="noopener noreferrer" className="contact-link">Chat with us</a>
+              <a href="https://wa.me/254737633532" target="_blank" rel="noopener noreferrer" className="contact-link">Chat with us</a>
               <p className="contact-detail" style={{marginTop: '15px'}}>Available 24/7</p>
             </div>
           </div>
