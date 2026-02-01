@@ -126,7 +126,7 @@ function Services({ detailed, setActiveSection }) {
     return (
       <section className="section">
         <h2 className="section-title">Our Specialized Services</h2>
-        <p className="section-subtitle">Expert care tailored for mothers and children</p>
+        <p className="section-subtitle">Huduma bora kwa mama na watoto | Expert care tailored for mothers and children</p>
         <div className="services-grid">
           {serviceCategories.map((cat, index) => (
             <div key={index} className="service-card">
@@ -149,8 +149,8 @@ function Services({ detailed, setActiveSection }) {
 
   return (
     <section className="section">
-      <h2 className="section-title">Our Specialized Services</h2>
-      <p className="section-subtitle">Comprehensive healthcare services for women and children</p>
+      <h2 className="section-title">Huduma Zetu | Our Specialized Services</h2>
+      <p className="section-subtitle">Utunzaji wa kipekee kwa mama na watoto | Expert care tailored for mothers and children</p>
       <div className="services-detailed">
         {serviceCategories.map((cat, index) => (
           <div key={index} className="service-category">

@@ -18,6 +18,7 @@ function Footer({ setActiveSection }) {
           <h3>Quick Links</h3>
           <a href="#" onClick={(e) => { e.preventDefault(); setActiveSection('home'); }}>Home</a>
           <a href="#" onClick={(e) => { e.preventDefault(); setActiveSection('services'); }}>Our Services</a>
+          <a href="#" onClick={(e) => { e.preventDefault(); setActiveSection('about'); }}>About Us</a>
           <a href="#" onClick={(e) => { e.preventDefault(); setActiveSection('appointment'); }}>Book Appointment</a>
           <a href="#" onClick={(e) => { e.preventDefault(); setActiveSection('consultation'); }}>Book Consultation</a>
           <a href="#" onClick={(e) => { e.preventDefault(); setActiveSection('insurance'); }}>Insurance</a>
@@ -36,19 +37,19 @@ function Footer({ setActiveSection }) {
 
         <div>
           <h3>Patient Resources</h3>
-          <a href="#">Pregnancy Guide</a>
-          <a href="#">Child Health Tips</a>
-          <a href="#">Immunization Schedule</a>
-          <a href="#">Insurance & Billing</a>
-          <a href="#">Patient Rights</a>
-          <a href="#">FAQs</a>
+          <a href="#" onClick={(e) => { e.preventDefault(); setActiveSection('resources'); }}>Pregnancy Guide</a>
+          <a href="#" onClick={(e) => { e.preventDefault(); setActiveSection('resources'); }}>Child Health Tips</a>
+          <a href="#" onClick={(e) => { e.preventDefault(); setActiveSection('resources'); }}>Immunization Schedule</a>
+          <a href="#" onClick={(e) => { e.preventDefault(); setActiveSection('resources'); }}>Insurance & Billing</a>
+          <a href="#" onClick={(e) => { e.preventDefault(); setActiveSection('resources'); }}>Patient Rights</a>
+          <a href="#" onClick={(e) => { e.preventDefault(); setActiveSection('resources'); }}>FAQs</a>
         </div>
       </div>
 
       <div className="footer-bottom">
-        <p>© 2024 Jifunze Ulezi Hub. All rights reserved. | Privacy Policy | Terms of Service</p>
+        <p>🌱 Tujifunze Ulezi: Nurture HUB</p>
         <p style={{ marginTop: '10px', fontSize: '13px' }}>
-          Specialized Women & Children Healthcare | 24/7 Emergency Services
+          © 2026 All rights reserved. Supporting mothers with love and care.
         </p>
       </div>
     </footer>

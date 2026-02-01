@@ -41,6 +41,12 @@ function Header({ activeSection, setActiveSection }) {
             Services
           </button>
           <button 
+            className={activeSection === 'about' ? 'active' : ''} 
+            onClick={() => handleNavClick('about')}
+          >
+            About
+          </button>
+          <button 
             className={activeSection === 'appointment' ? 'active' : ''} 
             onClick={() => handleNavClick('appointment')}
           >

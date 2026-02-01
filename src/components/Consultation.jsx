@@ -85,7 +85,7 @@ function Consultation() {
   return (
     <section className="booking-page">
       <div className="booking-hero">
-        <h1>Book Consultation</h1>
+        <h1>Weka Ushauri | Book Consultation</h1>
         <p>Professional healthcare consultation with payment options 💳</p>
       </div>
 
@@ -242,18 +242,49 @@ function Consultation() {
                 </div>
 
                 {formData.paymentMethod === 'mpesa' && (
-                  <div className="input-group">
-                    <label>M-Pesa Phone Number *</label>
-                    <input 
-                      type="tel" 
-                      placeholder="0711 355 485"
-                      value={formData.mpesaPhone} 
-                      onChange={(e) => setFormData({...formData, mpesaPhone: e.target.value})}
-                      required
-                    />
-                    <small style={{color: '#5A6C7D', fontSize: '13px', marginTop: '5px'}}>
-                      You'll receive an M-Pesa prompt on this number
-                    </small>
+                  <>
+                    <div className="input-group">
+                      <label>M-Pesa Phone Number *</label>
+                      <input 
+                        type="tel" 
+                        placeholder="0711 355 485"
+                        value={formData.mpesaPhone} 
+                        onChange={(e) => setFormData({...formData, mpesaPhone: e.target.value})}
+                        required
+                      />
+                      <small style={{color: '#5A6C7D', fontSize: '13px', marginTop: '5px'}}>
+                        You'll receive an M-Pesa prompt on this number
+                      </small>
+                    </div>
+                    <div style={{background: '#E8F4F8', padding: '20px', borderRadius: '12px', marginTop: '20px'}}>
+                      <h4 style={{color: '#2C3E50', marginBottom: '15px', fontSize: '16px'}}>📱 M-Pesa Payment Instructions:</h4>
+                      <ol style={{color: '#5A6C7D', fontSize: '14px', lineHeight: '1.8', paddingLeft: '20px'}}>
+                        <li>Click "Confirm Booking" below</li>
+                        <li>You'll receive an STK push notification on your phone</li>
+                        <li>Enter your M-Pesa PIN to complete payment</li>
+                        <li>You'll receive a confirmation SMS from M-Pesa</li>
+                        <li>Your appointment will be confirmed immediately</li>
+                      </ol>
+                      <p style={{marginTop: '15px', fontSize: '13px', color: '#856404', background: '#FFF3CD', padding: '10px', borderRadius: '8px'}}>
+                        <strong>Note:</strong> Payment must be completed within 60 seconds of receiving the prompt
+                      </p>
+                    </div>
+                  </>
+                )}
+
+                {formData.paymentMethod === 'cash' && (
+                  <div style={{background: '#FFF5F7', padding: '20px', borderRadius: '12px', marginTop: '20px'}}>
+                    <h4 style={{color: '#2C3E50', marginBottom: '15px', fontSize: '16px'}}>💵 Cash Payment Instructions:</h4>
+                    <ul style={{color: '#5A6C7D', fontSize: '14px', lineHeight: '1.8', paddingLeft: '20px'}}>
+                      <li>Your appointment will be reserved upon booking</li>
+                      <li>Please arrive 15 minutes before your scheduled time</li>
+                      <li>Payment is due at the reception desk before consultation</li>
+                      <li>We accept cash payments in Kenyan Shillings (KSh)</li>
+                      <li>A receipt will be provided upon payment</li>
+                    </ul>
+                    <p style={{marginTop: '15px', fontSize: '13px', color: '#856404', background: '#FFF3CD', padding: '10px', borderRadius: '8px'}}>
+                      <strong>Important:</strong> Failure to pay before consultation may result in appointment cancellation
+                    </p>
                   </div>
                 )}
 
