@@ -2207,6 +2207,11 @@ body {
     font-size: 14px;
   }
 
+  .payment-options-grid {
+    grid-template-columns: 1fr 1fr !important;
+    gap: 15px !important;
+  }
+
   .contact-form-section {
     padding: 30px 20px;
   }

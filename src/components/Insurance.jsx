@@ -11,22 +11,6 @@ function Insurance() {
       <h2 className="section-title">Insurance & Payment Options</h2>
       <p className="section-subtitle">We accept major insurance providers in Kenya</p>
 
-      <div style={{ 
-        maxWidth: '800px', 
-        margin: '0 auto 50px', 
-        background: 'var(--primary-blue)', 
-        color: 'var(--white)', 
-        padding: '30px', 
-        borderRadius: '12px',
-        textAlign: 'center'
-      }}>
-        <h3 style={{ fontSize: '24px', marginBottom: '15px' }}>💳 SHA Accredited Facility</h3>
-        <p style={{ fontSize: '16px', lineHeight: '1.7' }}>
-          We are fully accredited by the Social Health Authority (SHA). 
-          All maternity, pediatric, and gynecology services are covered under SHA schemes.
-        </p>
-      </div>
-
       <div className="services-grid">
         {insuranceProviders.map((provider, index) => (
           <div key={index} className="service-card">
@@ -148,7 +132,7 @@ function Insurance() {
           gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', 
           gap: '20px',
           textAlign: 'center'
-        }}>
+        }} className="payment-options-grid">
           <div>
             <div style={{ fontSize: '40px', marginBottom: '10px' }}>💵</div>
             <strong>Cash Payment</strong>
