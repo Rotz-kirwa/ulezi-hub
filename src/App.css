@@ -2058,16 +2058,16 @@ body {
 
 @media (max-width: 768px) {
   .contact-hero {
-    padding: 15px 15px;
+    padding: 12px 15px;
   }
 
   .contact-hero h1 {
-    font-size: 18px;
-    margin-bottom: 4px;
+    font-size: 16px;
+    margin-bottom: 3px;
   }
 
   .contact-hero p {
-    font-size: 12px;
+    font-size: 11px;
   }
 
   .contact-info-grid {
