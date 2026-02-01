@@ -80,6 +80,10 @@ body {
   gap: 30px;
 }
 
+.mobile-close-btn {
+  display: none;
+}
+
 .mobile-menu-btn {
   display: none;
   background: none;
@@ -1144,6 +1148,10 @@ body {
 @media (min-width: 769px) {
   .mobile-actions {
     display: none;
+  }
+
+  .mobile-close-btn {
+    display: none !important;
   }
 }
 
