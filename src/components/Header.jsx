@@ -10,11 +10,6 @@ function Header({ activeSection, setActiveSection }) {
 
   return (
     <header className="header">
-      <div className="header-top">
-        <div className="header-top-content">
-          <span>📞 24/7 Emergency: 0711 355 485</span>
-        </div>
-      </div>
       <div className="header-main">
         <div className="logo">
           <span style={{color: '#FF1493'}}>Jifunze</span>
