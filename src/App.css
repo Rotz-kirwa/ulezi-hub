@@ -2461,3 +2461,26 @@ body {
 .btn-read-more:hover {
   color: #9370DB;
 }
+
+@media (max-width: 768px) {
+  .blog-hero {
+    padding: 25px 15px;
+  }
+
+  .blog-hero h1 {
+    font-size: 22px;
+    margin-bottom: 6px;
+  }
+
+  .blog-hero p {
+    font-size: 13px;
+  }
+
+  .blog-categories {
+    display: none;
+  }
+
+  .blog-grid {
+    grid-template-columns: 1fr;
+  }
+}
