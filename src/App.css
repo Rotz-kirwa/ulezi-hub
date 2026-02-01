@@ -113,10 +113,13 @@ body {
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   color: var(--white);
   padding: 250px 20px;
   text-align: center;
   min-height: 700px;
+  width: 100%;
+  overflow: hidden;
 }
 
 .hero-content {
@@ -1072,6 +1075,8 @@ body {
   .hero {
     padding: 150px 20px;
     min-height: 400px;
+    background-position: center;
+    background-attachment: scroll;
   }
 
   .hero h1 {
