@@ -104,6 +104,38 @@ function Services({ detailed, setActiveSection }) {
       ]
     },
     {
+      category: 'Diet & Nutrition Guidance',
+      icon: '🥗',
+      image: 'https://i.pinimg.com/736x/7a/b6/cc/7ab6cce10471bbbad389729eca54621b.jpg',
+      color: '#FF9800',
+      services: [
+        'Pregnancy nutrition planning',
+        'Postnatal diet guidance',
+        'Breastfeeding nutrition support',
+        'Baby weaning & solid food introduction',
+        'Child nutrition & meal planning',
+        'Maternal weight management',
+        'Nutritional supplements guidance',
+        'Special dietary needs consultation'
+      ]
+    },
+    {
+      category: 'Home Services',
+      icon: '🏠',
+      image: 'https://i.pinimg.com/736x/8a/c9/2d/8ac92dbabc9522b9b802cc3493d2ed0f.jpg',
+      color: '#9C27B0',
+      services: [
+        'Postnatal home visits',
+        'Newborn care at home',
+        'Home vaccination services',
+        'Lactation support at home',
+        'Home health monitoring',
+        'Elderly care services',
+        'Home nursing care',
+        'Medical equipment rental'
+      ]
+    },
+    {
       category: 'Emergency & Support Services',
       icon: '🚨',
       image: 'https://i.pinimg.com/1200x/34/14/03/341403d15bcffea3bb9c9ab1424e8420.jpg',
@@ -131,15 +163,24 @@ function Services({ detailed, setActiveSection }) {
           {serviceCategories.map((cat, index) => (
             <div key={index} className="service-card">
               {cat.image ? (
-                <div className="service-icon" style={{width: '80px', height: '80px', margin: '0 auto 20px', borderRadius: '50%', overflow: 'hidden'}}>
-                  <img src={cat.image} alt={cat.category} style={{width: '100%', height: '100%', objectFit: 'cover'}} />
-                </div>
+                <>
+                  <div className="service-image-full">
+                    <img src={cat.image} alt={cat.category} />
+                  </div>
+                  <div className="service-content">
+                    <h3>{cat.category}</h3>
+                    <p>{cat.services.slice(0, 3).join(' • ')}</p>
+                    <button className="btn btn-primary" onClick={() => setActiveSection('appointment')} style={{width: '100%', background: cat.color, border: 'none'}}>Book Now</button>
+                  </div>
+                </>
               ) : (
-                <div className="service-icon">{cat.icon}</div>
+                <>
+                  <div className="service-icon">{cat.icon}</div>
+                  <h3>{cat.category}</h3>
+                  <p>{cat.services.slice(0, 3).join(' • ')}</p>
+                  <button className="btn btn-primary" onClick={() => setActiveSection('appointment')} style={{marginTop: '15px', width: '100%', background: cat.color, border: 'none'}}>Book Now</button>
+                </>
               )}
-              <h3>{cat.category}</h3>
-              <p>{cat.services.slice(0, 3).join(' • ')}</p>
-              <button className="btn btn-primary" onClick={() => setActiveSection('appointment')} style={{marginTop: '15px', width: '100%', background: cat.color, border: 'none'}}>Book Now</button>
             </div>
           ))}
         </div>

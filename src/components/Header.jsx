@@ -65,10 +65,10 @@ function Header({ activeSection, setActiveSection }) {
             Insurance
           </button>
           <button 
-            className={activeSection === 'emergency' ? 'active' : ''} 
-            onClick={() => handleNavClick('emergency')}
+            className={activeSection === 'contact' ? 'active' : ''} 
+            onClick={() => handleNavClick('contact')}
           >
-            Emergency
+            Contact
           </button>
         </nav>
       </div>

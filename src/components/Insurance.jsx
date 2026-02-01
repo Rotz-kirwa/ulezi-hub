@@ -1,20 +1,9 @@
 function Insurance() {
   const insuranceProviders = [
     { name: 'SHA', type: 'Social Health Authority', status: 'Accepted' },
-    { name: 'AAR Insurance', type: 'Private Health Insurance', status: 'Accepted' },
-    { name: 'Jubilee Insurance', type: 'Private Health Insurance', status: 'Accepted' },
-    { name: 'CIC Insurance', type: 'Private Health Insurance', status: 'Accepted' },
     { name: 'Britam', type: 'Private Health Insurance', status: 'Accepted' },
     { name: 'Madison Insurance', type: 'Private Health Insurance', status: 'Accepted' },
-    { name: 'APA Insurance', type: 'Private Health Insurance', status: 'Accepted' },
-    { name: 'Resolution Health', type: 'Private Health Insurance', status: 'Accepted' },
-    { name: 'UAP Insurance', type: 'Private Health Insurance', status: 'Accepted' },
-    { name: 'GA Insurance', type: 'Private Health Insurance', status: 'Accepted' },
-    { name: 'ICEA LION', type: 'Private Health Insurance', status: 'Accepted' },
-    { name: 'Sanlam', type: 'Private Health Insurance', status: 'Accepted' },
-    { name: 'Pacis Insurance', type: 'Private Health Insurance', status: 'Accepted' },
-    { name: 'Liaison Insurance', type: 'Private Health Insurance', status: 'Accepted' },
-    { name: 'Occidental Insurance', type: 'Private Health Insurance', status: 'Accepted' }
+    { name: 'Jubilee Insurance', type: 'Private Health Insurance', status: 'Accepted' }
   ]
 
   return (
@@ -38,10 +27,10 @@ function Insurance() {
         </p>
       </div>
 
-      <div className="insurance-grid">
+      <div className="services-grid">
         {insuranceProviders.map((provider, index) => (
-          <div key={index} className="insurance-card">
-            <div className="insurance-logo-container">
+          <div key={index} className="service-card">
+            <div className="service-image-full">
               {provider.name === 'SHA' ? (
               <img 
                 src="https://i.pinimg.com/1200x/74/0a/56/740a562d61dd5ae4230bb1c46a1b0a82.jpg" 
@@ -136,11 +125,9 @@ function Insurance() {
               <div className="insurance-icon">🏥</div>
             )}
             </div>
-            <div className="insurance-info">
+            <div className="service-content">
               <h3>{provider.name}</h3>
-              <p style={{ color: 'var(--text-gray)', fontSize: '14px', marginBottom: '10px' }}>
-                {provider.type}
-              </p>
+              <p>{provider.type}</p>
               <span className="insurance-status">✓ {provider.status}</span>
             </div>
           </div>

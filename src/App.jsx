@@ -8,8 +8,8 @@ import Resources from './components/Resources'
 import WhyChooseUs from './components/WhyChooseUs'
 import Appointment from './components/Appointment'
 import Consultation from './components/Consultation'
+import Contact from './components/Contact'
 import Testimonials from './components/Testimonials'
-import Emergency from './components/Emergency'
 import Insurance from './components/Insurance'
 import Footer from './components/Footer'
 
@@ -33,8 +33,8 @@ function App() {
         {activeSection === 'resources' && <Resources />}
         {activeSection === 'appointment' && <Appointment />}
         {activeSection === 'consultation' && <Consultation />}
+        {activeSection === 'contact' && <Contact />}
         {activeSection === 'insurance' && <Insurance />}
-        {activeSection === 'emergency' && <Emergency />}
       </main>
       <Footer setActiveSection={setActiveSection} />
       <a href="https://wa.me/254711355485?text=Hello%20Jifunze%20Ulezi%20Hub,%20I%20would%20like%20to%20inquire%20about%20your%20services" target="_blank" rel="noopener noreferrer" className="whatsapp-float" title="Chat with us on WhatsApp">

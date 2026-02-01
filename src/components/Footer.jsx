@@ -22,7 +22,7 @@ function Footer({ setActiveSection }) {
           <a href="#" onClick={(e) => { e.preventDefault(); setActiveSection('appointment'); }}>Book Appointment</a>
           <a href="#" onClick={(e) => { e.preventDefault(); setActiveSection('consultation'); }}>Book Consultation</a>
           <a href="#" onClick={(e) => { e.preventDefault(); setActiveSection('insurance'); }}>Insurance</a>
-          <a href="#" onClick={(e) => { e.preventDefault(); setActiveSection('emergency'); }}>Emergency Contact</a>
+          <a href="#" onClick={(e) => { e.preventDefault(); setActiveSection('contact'); }}>Contact Us</a>
         </div>
 
         <div>
