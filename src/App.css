@@ -2236,6 +2236,14 @@ body {
     font-size: 14px;
   }
 
+  .step-indicator {
+    display: none;
+  }
+
+  .booking-container {
+    padding: 20px 15px;
+  }
+
   .contact-form-section {
     padding: 30px 20px;
   }
